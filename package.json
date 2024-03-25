@@ -12,9 +12,11 @@
     "@nomicfoundation/hardhat-ethers": "^3.0.5",
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
     "ethers": "^6.11.1",
-    "hardhat": "^2.21.0"
+    "hardhat": "^2.21.0",
+    "hardhat-gas-reporter": "^2.0.2"
   },
   "dependencies": {
+    "chai": "^4.4.1",
     "dotenv": "^16.4.5"
   }
 }

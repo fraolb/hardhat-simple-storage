@@ -2,6 +2,7 @@ require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 require("@nomicfoundation/hardhat-ethers");
 require("./tasks/block-number");
+require("hardhat-gas-reporter");
 
 /** @type import('hardhat/config').HardhatUserConfig */
 const SEPOLIA_RPC_URL = process.env.RPC_URL;
@@ -20,4 +21,11 @@ module.exports = {
     },
   },
   solidity: "0.8.24",
+  gasReporter: {
+    enabled: true,
+    // outputFile: "gas-report.txt",
+    // noColors: true,
+    // currency: "USD",
+    // coinmarketcap: ""
+  },
 };

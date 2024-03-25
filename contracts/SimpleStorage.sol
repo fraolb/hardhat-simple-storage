@@ -8,7 +8,7 @@ contract SimpleStorage {
 
     ///this is initialized to zero
     //default is internal,
-    uint256 favNum;
+    uint256 favNum = 0;
 
     //dictionaries
     mapping(string => uint256) public nameToFavNumber;
@@ -28,7 +28,7 @@ contract SimpleStorage {
     //functions
     function store(uint256 _favNumber) public virtual {
         favNum = _favNumber;
-        favNum = favNum + 1;
+        //  favNum = favNum + 1;
     }
 
     //when view and pure functions, when called alone, dont spend gas, they disallow any modification, and reading from the state
